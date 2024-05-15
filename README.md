@@ -309,25 +309,27 @@ The Support Vector Machine (SVM) model is trained using various combinations of 
 
 - **C**: The regularization parameter. A smaller C encourages a larger margin separating the classes, while a larger C aims to classify all training examples correctly, potentially leading to overfitting.
 - **gamma**: The gamma parameter in SVMs is **a hyperparameter that controls the shape of the decision boundary.**
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/38eee42d-86ba-4b9e-9e26-d61e358598b9/Untitled.png)
+    ![Untitled](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/3d156b7b-0698-4768-93c3-c41606c513e1)
+
     
 - **kernel**: Specifies the kernel type to be used in the algorithm. The options include 'linear', 'poly', 'rbf', and 'sigmoid'. Each kernel function maps the input data into a higher-dimensional space.
-    
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/2dc3cafb-f9cc-4a7b-b353-5f4ba20d1a1f/Untitled.png)
+    ![Untitled (1)](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/b39ae3e9-47b1-40d7-9e1f-77f1e2f71233)
+
+   
     
 
 ### **Model Evaluation**
 
 The SVM model is trained on the TF-IDF features of the preprocessed movie review text. For each combination of hyperparameters, the model's accuracy is evaluated on the testing set. The best accuracy achieved was with C=8, gamma=0.1, kernel='rbf', resulting in a test accuracy of 0.88. The best model is saved for future use.
 
-![87fafc7d-8125-4fdf-810e-ccc9ab9d0fb5.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/6a16b787-5912-451f-83bf-58bc4a03d0a3/87fafc7d-8125-4fdf-810e-ccc9ab9d0fb5.png)
+![95f814c8-86c8-491a-9ce6-f33fb8b4b639](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/92fc39af-f828-42d9-a412-ce41d126325a)
+![140b2687-181a-4b09-92bd-766921d6d508](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/07e7dff2-8299-46bf-ad68-a8d6fe44d968)
+![782ed1fd-9952-4fb7-8a74-0d42891da37a](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/225f8490-ea62-4c7e-ae86-be52e122a1b3)
+![979902a8-3246-481a-8e98-fdb858faa603](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/05f7f9d7-e75c-404e-9310-ce1bedfb2561)
 
-![f97f0831-965e-4fa6-b85a-1d8c730b8001.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/8616ac6e-8a33-4721-b67d-1f0191242e78/f97f0831-965e-4fa6-b85a-1d8c730b8001.png)
 
-![43a58f32-7d53-4f5e-8916-54ee67d60382.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/36cb6b75-f245-424c-870e-3e775c02beef/43a58f32-7d53-4f5e-8916-54ee67d60382.png)
 
-![02f6ae6d-d7fd-4b81-acd6-7bdd83780424.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/7ae48b22-69cd-43a4-9044-64ce7be21292/02f6ae6d-d7fd-4b81-acd6-7bdd83780424.png)
+
 
 ## **Random Forest Model**
 
@@ -343,10 +345,10 @@ The Random Forest model is trained using different combinations of hyperparamete
 ### **Model Evaluation**
 
 The model's accuracy is evaluated on the testing set for each hyperparameter combination. The best accuracy achieved was with n_estimators=300, max_depth=20, min_samples_split=5, min_samples_leaf=4, resulting in a test accuracy of 0.87. The best model is saved for future use.
+![5f51d456-149d-4724-be52-55131d0192db](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/a1e5412e-cc8a-44f7-b369-74f8f9cbe796)
 
-![e95e17de-a4a4-4a55-acb0-5af28458917b.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/eb94cfe6-84bf-4917-8013-34c80da27cd8/e95e17de-a4a4-4a55-acb0-5af28458917b.png)
 
-![f25f327a-5784-4c98-adaa-5c6983ac7cb8.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/0919c9d8-95ea-4034-885f-c293094727d3/f25f327a-5784-4c98-adaa-5c6983ac7cb8.png)
+![7e77a719-9519-43ef-904d-bf19b4105a3e](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/815095fe-2987-4edd-8c4b-3ef4446b3849)
 
 ## **Logistic Regression Model**
 
@@ -361,10 +363,12 @@ The Logistic Regression model is trained using a grid of hyperparameters:
 ### **Model Evaluation**
 
 The accuracy of the Logistic Regression model is evaluated on the testing set for each hyperparameter combination. The best accuracy achieved was with C=10, penalty='l2', solver='liblinear', resulting in a test accuracy of 0.88. The best model is saved for future use.
+![a9bb9056-7877-46a0-98ec-6becacd83536](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/e13abedc-d729-44ff-b53a-c57dfd0fd50c)
 
-![e55dc9b5-d28b-45ad-ac02-24aa7d2fffa4.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/b613b7fe-8287-43bb-8106-e369045e9140/e55dc9b5-d28b-45ad-ac02-24aa7d2fffa4.png)
+![01383002-0722-4a81-b114-1b83169fd457](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/2629b500-555a-459b-9c06-5d509bf78bd9)
 
-![55fcb977-266d-4801-9917-7abc736ead1f.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/71c4ba05-9bbe-4b08-90c2-961c778af6d7/55fcb977-266d-4801-9917-7abc736ead1f.png)
+
+
 
 ## **XGBoost Model**
 
@@ -379,10 +383,10 @@ The XGBoost model is trained using different combinations of hyperparameters:
 ### **Model Evaluation**
 
 The XGBoost model's accuracy is evaluated on the testing set for each hyperparameter combination. The best accuracy achieved was with n_estimators=300, learning_rate=0.1, max_depth=5, resulting in a test accuracy of 0.84. The best model is saved for future use.
+![8357386b-3cdf-41e8-a796-4e6e0041acaa](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/da7236e1-9720-493a-897a-55b6a115265d)
 
-![e62b7872-8c24-4f16-a799-31217b6fc426.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/64e0c263-38b1-4dea-b0d0-6a4be1670e20/e62b7872-8c24-4f16-a799-31217b6fc426.png)
+![7fd2d16e-b137-410f-8bd0-fbca87ad04ae](https://github.com/El-Sayed-Mustafa/sentiment_analysis_movie_review/assets/110793510/7c90d539-dd95-432d-a5a1-6df319b64bd8)
 
-![0d607ba2-046d-49cc-8290-c21fc048acb2.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e95079d2-6ab8-4e3f-8b5f-4063e545d924/ec70b46d-db5c-4589-9487-9f57c66273b8/0d607ba2-046d-49cc-8290-c21fc048acb2.png)
 
 ## **Visualization**
 
